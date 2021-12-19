@@ -1,4 +1,4 @@
-# Talking-Face-Generation-Using-Deformable-Models
+# Emotional Talking Face Generation Using Deformable Convolutional Networks
 This project was done as part of course CS269 at UCLA
 #### Team Members:
 1) Parth Shettiwar
