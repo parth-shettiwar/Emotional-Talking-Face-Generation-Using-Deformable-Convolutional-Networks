@@ -20,6 +20,44 @@ using the structural similarity (SSIM) andpeak signal-to-noise ratio (PSNR) metr
 
 ## Results
 Given input image, speech sample, and emotion, we generate the video of the person with lip and facial features synced with the video
-Following is the sample video we generated on of our team members  
+Following is the sample video we generated on our team members  
 ![.](https://github.com/parth-shettiwar/Talking-Face-Generation-Using-Deformable-Models/blob/main/Diagram/1.gif)
 ![.](https://github.com/parth-shettiwar/Talking-Face-Generation-Using-Deformable-Models/blob/main/Diagram/2.gif)
+
+## How to Run
+Find the pretrained models [here](https://drive.google.com/drive/folders/1wjqLrdf82E-qv6CXcwk9fC_dVnEP6PLN?usp=sharing)
+Also download the preprocessed dataset from here. We have considered 2 emotions : Happy and Sad subsampled from [CREM-D Dataset](https://github.com/CheyneyComputerScience/CREMA-D). 
+Now download all libraires given in requirements.txt as 
+```
+pip install -r requirements.txt
+
+```
+#### For Training
+First pretrain the discriminitor
+
+```
+!python train.py -i ./Final_Dataset/ -v ./Eval_set/ -o ./Final_Models/Disc_pre/mde --pre_train 1 --disc_emo 1 --lr_emo 1e-4
+```
+Then pretrain the generator 
+```
+python train.py -i /Final_Dataset/ -v /Eval_set/ -o ./model --lr_g 1e-4
+```
+Then do the joint training
+```
+!python train.py -i ./Final_Dataset/ -v ./Eval_set/ -o ./Final_Models/Orig -m ./model -mde ./Final_Models/Disc_pre/mde --disc_frame 0.01 --disc_emo 0.001 --deform 1
+
+```
+
+#### For Inference
+To generate happy and sad videos for all images in eval dataset:
+```
+!python generate_all_emotions.py -ih ./Eval_set -m ./Final_Models/Ours -o ./results/Ours --deform 1
+```
+To generate happy and sad video for any random given image and speech sample
+```
+!python generate.py -im ./data/image_samples/img09.png -is ./data/speech_samples/speech01.wav -m ./Final_Models/Orig -o ./custom_results/
+```
+
+
+
+
