@@ -16,7 +16,7 @@ adding deformable layers and attention modules. We further compare our approach 
 using the structural similarity (SSIM) andpeak signal-to-noise ratio (PSNR) metrics. 
 
 ## Architecture
-[.](https://github.com/parth-shettiwar/Talking-Face-Generation-Using-Deformable-Models/blob/main/Diagram/architecture.drawio.png)
+![.](https://github.com/parth-shettiwar/Talking-Face-Generation-Using-Deformable-Models/blob/main/Diagram/architecture.drawio.png)
 
 ## Results
 Given input image, speech sample, and emotion, we generate the video of the person with lip and facial features synced with the video
