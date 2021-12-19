@@ -12,7 +12,7 @@ Talking face generation is the process of generatinga video of a person saying t
 facial features synced at each time step. In audiovisual speechcommunication, visual emotion expression is crucial. 
 Using deeplearning, researchers have been able to make considerableprogress in tackling this computer vision task. 
 CNNs are designed to model big, unknown transformations, however they have limitations. In this work, we propose a hybrid approach by 
-adding deformable layers and attention modules. We further compare our approach to purely deep learning based approache sand contrast them 
+adding deformable layers and attention modules. We further compare our approach to purely deep learning based approaches and contrast them 
 using the structural similarity (SSIM) andpeak signal-to-noise ratio (PSNR) metrics. 
 
 ## Architecture
