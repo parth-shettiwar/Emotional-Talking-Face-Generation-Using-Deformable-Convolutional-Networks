@@ -1,6 +1,6 @@
 # Talking-Face-Generation-Using-Deformable-Models
 This project was done as part of course CS269 at UCLA
-Team Members:
+#### Team Members:
 1) Parth Shettiwar
 2) Satvik Mashkaria
 3) Lalit Bhagat
