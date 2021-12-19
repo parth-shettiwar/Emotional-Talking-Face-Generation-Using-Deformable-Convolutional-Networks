@@ -22,4 +22,4 @@ using the structural similarity (SSIM) andpeak signal-to-noise ratio (PSNR) metr
 Given input image, speech sample, and emotion, we generate the video of the person with lip and facial features synced with the video
 Following is the sample video we generated on of our team members  
 ![.](https://github.com/parth-shettiwar/Talking-Face-Generation-Using-Deformable-Models/blob/main/Diagram/1.gif)
-![.](https://github.com/parth-shettiwar/Talking-Face-Generation-Using-Deformable-Models/blob/main/Diagram/1.gif)
+![.](https://github.com/parth-shettiwar/Talking-Face-Generation-Using-Deformable-Models/blob/main/Diagram/2.gif)
